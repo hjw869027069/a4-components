@@ -1,0 +1,134 @@
+/* public/css/main.css */
+
+body {
+    font-family: Arial, sans-serif;  /* Use Arial font for the body text */
+    margin: 20px;
+    background: #f7f6f8;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+/* Element selector */
+h1 {
+    text-align: center;
+    color: #003366; /* Darker blue for better contrast */
+    animation: fadeIn 1s ease-out;
+}
+
+/* Class selector for forms */
+.form-section {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: slideIn 0.8s ease-out;
+}
+
+/* ID selector for form fields */
+#addTaskForm {
+    border: 2px solid #003366; /* Darker blue for contrast */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#modifyTaskForm {
+    border: 2px solid #b22222; /* Darker red for contrast */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Class selector for input fields */
+.input-field {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Element selector for input focus */
+input:focus, select:focus {
+    border-color: #003366; /* Darker blue for input focus */
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5); /* Match the darker blue */
+}
+
+/* Class selector for buttons */
+.button-primary {
+    background-color: #003366; /* Darker blue for higher contrast */
+    color: #ffffff; /* White text for better contrast */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #002244; /* Slightly darker on hover */
+    transform: scale(1.05);
+}
+
+/* ID selector for the task table */
+#taskTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Element selector for table headers and cells */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+/* Class selector for table styling */
+.task-table th {
+    background-color: #003366; /* Dark blue background for better contrast */
+    color: #ffffff; /* White text for readability */
+}
+
+.task-table td {
+    background-color: white;
+    color: #333333; /* Darker text for readability */
+}
+
+.task-table tr:hover td {
+    background-color: #e0e0e0; /* Light gray for hover */
+}
+
+/* Specific button styling inside table cells */
+td button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #b22222; /* Darker red for better contrast */
+    color: #ffffff; /* White text for better readability */
+    transition: background 0.3s ease;
+}
+
+td button:hover {
+    background-color: #8b0000; /* Darker red on hover */
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
